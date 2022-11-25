@@ -2,6 +2,7 @@
 <html lang="en">
 
 <?php include 'inc/head.php'; ?>
+<?php include 'pages/auth.php'; ?>
 
 
 <body class="nav-md">
@@ -18,7 +19,7 @@
                     <div class="card-body text-dark">
                         <div class="container">
                             <?php 
-                            $getall = getAllOrders();
+                            $getall = getAllOrdersByCustomer($_SESSION['customer']);
 
                             while($row=mysqli_fetch_assoc($getall)){ 
                                 $order_id = $row['order_id'];
