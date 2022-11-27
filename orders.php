@@ -84,7 +84,7 @@
 
 
             <?php 
-    $getall = getAllOrders();
+    $getall = getAllOrdersByCustomer($_SESSION['customer']);
 
     while($row=mysqli_fetch_assoc($getall)){ 
         $order_id = $row['order_id'];
