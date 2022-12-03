@@ -105,6 +105,7 @@
                         </div>
                         <div class="portfolio-text bg-secondary d-flex flex-column align-items-center justify-content-center">
                             <h4 class="text-white mb-4"><?php echo $row2['product_name']; ?></h4>
+                            <h4 class="text-white mb-4">Rs.<?php echo $row2['product_price']; ?>.00</h4>
                             <div class="d-flex align-items-center justify-content-center">
                             <button class="btn btn-outline-primary m-1" type="button" onclick="addtoCartProduct(<?php echo $pid; ?>, <?php echo $row2['product_price']; ?>)">
                                     <i class="fa fa-cart-shopping"></i>

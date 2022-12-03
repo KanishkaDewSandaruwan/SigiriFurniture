@@ -262,6 +262,7 @@ function getAllOrdersByCustomer($customer_id){
 	return mysqli_query($con,$viewcat);
 }
 
+
 function getAllOrderItemsBYOrder($order_id){
 	include 'connection.php';
 
