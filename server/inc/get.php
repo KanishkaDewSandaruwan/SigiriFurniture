@@ -250,7 +250,7 @@ function checkPasswordByName($data){
 function getAllCart($customer_id){
 	include 'connection.php';
 
-	$q1= "SELECT * FROM cart join products on products.pid = cart.pid join customer on customer.customer_id = cart.customer_id WHERE cart.customer_id = '$customer_id'";
+	$q1= "SELECT * FROM cart join products on products.pid = cart.pid WHERE cart.customer_id = '$customer_id'";
 	return mysqli_query($con,$q1);
 }
 
